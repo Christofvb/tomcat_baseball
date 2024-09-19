@@ -1,0 +1,16 @@
+/* Couleurs du club */
+:root {
+  --black: #000;
+  --yellow: #ffd700;
+  --blue: #1e90ff;
+  --alert-red: #ff4500;
+  --background-color: #F2E2D0; /* Couleur de fond claire */
+}
+/*autres couleurs #FEF9F1 #FAF3E0 */
+body {
+  background-color: var(--background-color);
+  color: #333;
+  font-family: 'Roboto', sans-serif; /* Choix d'une police moderne */
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,66 @@
+header {
+  background-color: #fff; /* Changer le fond du header en blanc */
+  color: #000; /* Texte en noir pour le contraste */
+  padding: 0; /* Pas de padding pour éviter d'augmenter la taille du header */
+  position: fixed; /* Fixer le header en haut */
+  top: 0; /* Positionnement en haut */
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Assurer que le header reste au-dessus des autres éléments */
+  height: 80px; /* Augmenter la hauteur du header à 80px */
+  display: flex; /* Utiliser flexbox pour un alignement moderne */
+  align-items: center; /* Alignement vertical */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre élégante sous le header */
+}
+
+nav {
+  max-width: 1200px; /* Largeur maximale du contenu */
+  margin: 0; /* Pas de marge pour le nav */
+  padding: 0; /* Pas de padding pour le nav */
+  display: flex; /* Utiliser flexbox pour un alignement moderne */
+  justify-content: flex-start; /* Aligner tous les éléments à gauche */
+  align-items: center; /* Alignement vertical */
+  height: 100%; /* Assurer que le nav prend toute la hauteur du header */
+}
+
+.logo {
+  height: 90%; /* Ajuster la hauteur de l'image pour l'adapter à la taille du header */
+  width: auto; /* Garder le ratio d'aspect de l'image */
+  max-width: 100%; /* S'assurer que l'image ne dépasse pas la largeur du header */
+  object-fit: contain; /* S'assurer que l'image est contenue dans l'élément sans déformer */
+}
+
+header ul {
+  list-style: none; /* Pas de puces pour la liste */
+  padding: 0; /* Pas de remplissage */
+  display: flex; /* Affichage en ligne */
+  margin: 0; /* Pas de marge pour la liste */
+}
+
+header ul li {
+  margin-left: 20px; /* Espace entre les éléments de la liste */
+  position: relative; /* Pour positionner la barre */
+}
+
+header ul li:not(:last-child)::after {
+  content: ''; /* Ajouter une barre après chaque élément sauf le dernier */
+  position: absolute; /* Positionner la barre de manière absolue */
+  right: -10px; /* Décalage à droite de la barre */
+  top: 50%; /* Centrer la barre verticalement */
+  transform: translateY(-50%); /* Ajuster le centrage vertical */
+  height: 40%; /* Hauteur de la barre */
+  width: 1px; /* Largeur de la barre */
+  background-color: #000; /* Couleur de la barre */
+}
+
+header a {
+  text-decoration: none; /* Pas de soulignement sur les liens */
+  color: #000; /* Texte en noir */
+  font-weight: bold; /* Gras pour les liens */
+  transition: color 0.3s ease; /* Transition douce pour les changements de couleur */
+  padding: 10px; /* Espace autour du texte pour l'effet de bouton */
+}
+
+header a:hover {
+  color: var(--blue); /* Bleu lors du survol */
+}

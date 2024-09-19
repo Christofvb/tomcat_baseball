@@ -1,0 +1,49 @@
+footer {
+  background-color: #fff; /* Fond blanc pour le footer */
+  color: #000; /* Texte en noir pour le contraste */
+  text-align: center; /* Centrer le texte */
+  padding: 20px 0; /* Espace autour du footer */
+  position: fixed; /* Fixe le footer en bas de la fenêtre */
+  bottom: 0; /* Garder le footer en bas */
+  width: 100%; /* Largeur complète */
+  z-index: 1000; /* Assurer que le footer est au-dessus des autres éléments */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère au-dessus du footer */
+}
+
+footer p {
+  margin: 0; /* Pas de marge pour le texte du footer */
+}
+
+/* Style des messages flash */
+.notice {
+  background-color: var(--yellow); /* Jaune pour les messages de notice */
+  color: #000; /* Texte noir */
+  padding: 10px; /* Espace autour du message */
+  margin: 20px 0; /* Espace au-dessus et en dessous */
+  border-radius: 5px; /* Coins arrondis */
+}
+
+.alert {
+  background-color: var(--alert-red); /* Rouge pour les messages d'alerte */
+  color: #fff; /* Texte blanc */
+  padding: 10px; /* Espace autour du message */
+  margin: 20px 0; /* Espace au-dessus et en dessous */
+  border-radius: 5px; /* Coins arrondis */
+}
+
+/* Style pour les icônes des réseaux sociaux */
+.social-icons {
+  display: flex; /* Utiliser flexbox pour aligner les icônes */
+  color:#000;
+  justify-content: center; /* Centrer les icônes horizontalement */
+  margin-top: 10px; /* Espacement au-dessus des icônes */
+}
+
+.social-icons a {
+  margin: 0 10px; /* Espace entre les icônes */
+}
+
+.social-icons img {
+  width: 24px; /* Largeur des icônes */
+  height: auto; /* Garder le ratio d'aspect des icônes */
+}

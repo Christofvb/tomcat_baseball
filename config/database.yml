@@ -1,0 +1,23 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: tomcatbaseball_admin
+  password: G6x!9yLp2#Wq
+  host: localhost
+  socket: /opt/homebrew/var/mysql/mysql.sock  # Mettez à jour cette ligne
+
+development:
+  <<: *default
+  database: tomcatbaseball_development
+
+test:
+  <<: *default
+  database: tomcatbaseball_test
+
+production:
+  <<: *default
+  database: tomcatbaseball_production
+  username: tomcatbaseball_admin
+  password: <%= ENV['TOMCATBASEBALL_DATABASE_PASSWORD'] %>
+  socket: /opt/homebrew/var/mysql/mysql.sock
