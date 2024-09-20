@@ -1,0 +1,99 @@
+/* Sidebar */
+.sidebar {
+  width: 250px; /* Largeur de la sidebar */
+  background-color: #fff; /* Fond blanc */
+  color: var(--black); /* Couleur du texte en noir */
+  height: 100vh; /* Prendre toute la hauteur de la fenêtre */
+  padding: 0; /* Pas de padding */
+  position: fixed;
+  top: 0; /* Coller en haut */
+  left: 0;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1); /* Ombre */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Logo ajusté, collé tout en haut */
+.logo {
+  width: 100%; /* Prendre toute la largeur de la sidebar */
+  max-height: 180px; /* Ajuster la taille du logo */
+  object-fit: contain; /* Garde les proportions */
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation dans la sidebar */
+.sidebar nav {
+  width: 100%; /* Prendre toute la largeur */
+  margin: 0; /* Pas de marge */
+  padding: 0; /* Pas de padding */
+  display: flex; /* Utiliser flexbox pour le positionnement */
+  flex-direction: column; /* Empiler les éléments de la nav verticalement */
+}
+
+/* Liste de navigation collée directement sous le logo */
+.sidebar nav ul {
+  list-style: none; /* Pas de puces */
+  margin: 0; /* Pas de marge */
+  padding: 0; /* Pas de padding */
+  width: 100%; /* Prendre toute la largeur */
+  flex-grow: 1; /* Prendre toute la hauteur disponible */
+}
+
+/* Chaque élément de la liste, collé au-dessus */
+.sidebar nav ul li {
+  width: 100%; /* S'assurer que chaque bouton prend toute la largeur */
+  margin: 0; /* Pas de marge */
+  padding: 0; /* Pas de padding */
+  position: relative; /* Pour positionner le pseudo-élément */
+  border-top: 1px solid black;
+  border-bottom: 1px solid black; /* Ligne noire en haut de chaque élément */
+}
+
+
+
+/* Lien dans chaque élément de la liste */
+.sidebar nav ul li a {
+  display: block; /* Prend toute la largeur */
+  width: 100%; /* Largeur complète */
+  padding: 15px 20px; /* Espace autour du texte */
+  text-align: center; /* Centrer le texte */
+  text-decoration: none;
+  color: var(--black); /* Couleur noire pour le texte */
+  font-weight: bold;
+  background-color: transparent; /* Transparent par défaut */
+  transition: background-color 0.3s ease;
+}
+
+/* État au survol */
+.sidebar nav ul li a:hover {
+  background-color: #FAF3E0; /* Couleur sable au survol */
+  cursor: pointer;
+}
+
+/* Icônes sociales */
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 20px; /* Coller les icônes en bas de la page visible */
+  left: 0;
+  right: 0;
+}
+
+.social-icons a {
+  color: var(--black); /* Couleur noire pour les icônes */
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--black); /* Couleur au survol (ajustée si nécessaire) */
+}
+
+/* Contenu principal à droite de la sidebar */
+.container {
+  margin-left: 250px; /* Décalage pour éviter que le contenu passe sous la sidebar */
+  padding: 20px; /* Espacement autour du contenu */
+}

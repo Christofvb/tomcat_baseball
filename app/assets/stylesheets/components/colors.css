@@ -13,4 +13,5 @@ body {
   font-family: 'Roboto', sans-serif; /* Choix d'une police moderne */
   margin: 0;
   padding: 0;
+  display: flex;
 }
