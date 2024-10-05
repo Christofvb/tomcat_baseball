@@ -1,0 +1,88 @@
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  color: var(--black);
+  height: 100vh;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar nav {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.sidebar nav ul li {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.sidebar nav ul li a {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--black);
+  font-weight: bold;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar nav ul li a:hover {
+  background-color: #FAF3E0;
+  cursor: pointer;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+}
+
+.social-icons a {
+  color: var(--black);
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #FAF3E0;
+}
+
+.container {
+  margin-left: 250px;
+  padding: 20px;
+}

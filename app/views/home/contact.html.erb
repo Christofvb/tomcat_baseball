@@ -1,0 +1,8 @@
+<h1> Je suis page de contact </h1>
+<h1>Président</h1>
+<% if president_info %>
+  <p>Le président est : <%= president_info.nom %> <%=president_info.prenom %></p>
+  <p> age <%=president_info.age%>
+<% else %>
+  <p>Aucun président trouvé.</p>
+<% end %>

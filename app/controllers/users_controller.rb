@@ -47,6 +47,6 @@ class UsersController < ApplicationController
   # Méthode user_params corrigée
   def user_params
     # Ajoutez ici les attributs que vous souhaitez permettre
-    params.require(:user).permit(:prenom, :nom, :code_postal, :ville, :adresse, :email, :password, :password_confirmation, :prenom)
+    params.require(:user).permit(:prenom, :nom, :code_postal, :ville, :adresse, :email, :password, :password_confirmation)
   end
 end
