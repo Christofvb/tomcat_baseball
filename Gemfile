@@ -20,6 +20,7 @@ gem "jbuilder"
 # gem "redis", ">= 4.0.1"
 gem 'mysql2', '>= 0.5.0'
 gem 'devise'
+gem 'nokogiri'
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
